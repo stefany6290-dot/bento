@@ -8,3 +8,6 @@
 
 /* 商家 POS 使用獨立入口。 */
 body[data-platform="staff"] .topbar nav button{font-size:14px;padding:7px 12px}body[data-platform="staff"] .topbar nav{flex-wrap:wrap}
+#mode-notice {
+  display: none;
+}
