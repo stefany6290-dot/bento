@@ -8,6 +8,15 @@
 
 /* 商家 POS 使用獨立入口。 */
 body[data-platform="staff"] .topbar nav button{font-size:14px;padding:7px 12px}body[data-platform="staff"] .topbar nav{flex-wrap:wrap}
-#mode-notice {
-  display: none;
-}
+
+/* 商家 POS：線上預約與排單提示 */
+.reserved-order{border:2px solid #b7672c;border-left:7px solid #b7672c}
+.tag.reservation-badge{background:#8d431c;color:#fff;font-weight:800;padding:6px 12px}
+.reservation-highlight{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;background:#fff0db;color:#643414;border-radius:12px;padding:14px 16px;margin:14px 0;font-size:1.05rem}
+.reservation-highlight strong{font-size:1.2rem;font-variant-numeric:tabular-nums}
+.reserved-overdue{border-color:#ad3636}
+.reserved-overdue .reservation-highlight{background:#ffeded;color:#8c2020}
+.reservation-alert{font-weight:800}
+.reservation-section{margin:28px 0 14px;color:#70451e}
+.reservation-section small{display:block;font-size:.85rem;font-weight:400;margin-top:6px}
+@media(max-width:600px){.reservation-highlight{align-items:flex-start;flex-direction:column}.reservation-highlight strong{font-size:1.05rem}}
